@@ -1,383 +1,1387 @@
-<!DOCTYPE html><html lang="en"><head>    
-    <meta charset="UTF-8" />    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />    
-    <title>Moving Beyond the Checkpoint Mindset — The Long Game</title>    
-    <style>        
-        /* ── Reset & Base ── */        
-        :root {            
-            --bg-color: #000000;            
-            --card-bg: #1c1c1e;            
-            --card-border: rgba(255, 255, 255, 0.08);            
-            --text-primary: #f5f5f7;            
-            --text-secondary: #86868b;            
-            --accent: #ff9f0a; /* Apple-style vibrant orange/gold */            
-            --accent-soft: rgba(255, 159, 10, 0.15);        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== PRIMARY SEO ===== -->
+    <title>The Long Game – Free Book by Saalim Zayed | Purpose & Discipline</title>
+    <meta name="description" content="Download The Long Game by Saalim Zayed for free. A powerful book on purpose, long-term thinking, discipline, and building a life that lasts. PDF & EPUB available." />
+    <meta name="keywords" content="The Long Game book, free purpose book PDF, discipline and success book, Islamic mindset book on purpose, Saalim Zayed book, long term thinking book, purpose book, self improvement, personal development, meaningful life" />
+    <meta name="author" content="Saalim Zayed" />
+    <link rel="canonical" href="https://yourdomain.com/" />
+
+    <!-- ===== OPEN GRAPH / FACEBOOK ===== -->
+    <meta property="og:type" content="book" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:title" content="The Long Game – Free Book by Saalim Zayed" />
+    <meta property="og:description" content="Download The Long Game for free. Discover purpose, long-term thinking, discipline, and practical principles for building a meaningful life. PDF & EPUB." />
+    <meta property="og:image" content="https://yourdomain.com/tlg.png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="900" />
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://yourdomain.com/" />
+    <meta name="twitter:title" content="The Long Game – Free Book by Saalim Zayed" />
+    <meta name="twitter:description" content="Free download of The Long Game — a book on purpose, long-term thinking, discipline, and meaningful success." />
+    <meta name="twitter:image" content="https://yourdomain.com/tlg.png" />
+
+    <!-- ===== SCHEMA.ORG (Book + Person) ===== -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Book",
+            "name": "The Long Game",
+            "author": {
+                "@type": "Person",
+                "name": "Saalim Zayed"
+            },
+            "image": "https://yourdomain.com/tlg.png",
+            "description": "A powerful book about purpose, long-term thinking, discipline, and building a meaningful life guided by faith and intentionality.",
+            "bookFormat": ["https://schema.org/EBook", "https://schema.org/PDF"],
+            "inLanguage": "en",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Hukm Qalbi"
+            },
+            "genre": ["Personal Development", "Self-Improvement", "Purpose", "Islamic Mindset"],
+            "copyrightYear": "2024",
+            "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            }
         }
-        
-        *, *::before, *::after {            
-            margin: 0;            
-            padding: 0;            
-            box-sizing: border-box;        
+    </script>
+
+    <!-- ===== FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --border-glass: rgba(255, 255, 255, 0.06);
+            --text-primary: #f5f5f5;
+            --text-secondary: #a8a8a8;
+            --text-muted: #6b6b6b;
+            --gold: #d4af37;
+            --gold-light: #e8c84a;
+            --gold-glow: rgba(212, 175, 55, 0.15);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --radius: 16px;
+            --shadow-card: 0 20px 60px rgba(0, 0, 0, 0.6);
+            --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-        
-        body {            
-            /* Apple System Font Stack */            
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;            
-            background: var(--bg-color);            
-            color: var(--text-primary);            
-            line-height: 1.5;            
-            min-height: 100vh;            
-            display: flex;            
-            align-items: center;            
-            justify-content: center;            
-            padding: 2rem 1.5rem;            
-            padding-left: calc(1.5rem + env(safe-area-inset-left));
-            padding-right: calc(1.5rem + env(safe-area-inset-right));
-            -webkit-font-smoothing: antialiased;            
-            -moz-osx-font-smoothing: grayscale;        
+
+        /* ===== RESET & BASE ===== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
-        /* ── Card Container ── */        
-        .landing {            
-            max-width: 1100px;            
-            width: 100%;            
-            background: var(--card-bg);            
-            border-radius: 32px;            
-            padding: 3.5rem;            
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);            
-            border: 1px solid var(--card-border);        
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        
-        /* ── Grid Layout ── */        
-        .grid {            
-            display: grid;            
-            grid-template-columns: 1fr 1fr;            
-            gap: 4rem;            
-            align-items: start;        
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
         }
-        
-        /* ── Left Column — Book Info ── */        
-        .book-info {            
-            display: flex;            
-            flex-direction: column;            
-            gap: 1.8rem;        
+
+        img {
+            max-width: 100%;
+            display: block;
         }
-        
-        /* Cover */        
-        .cover-wrapper {            
-            border-radius: 20px;            
-            overflow: hidden;            
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);            
-            background: #2c2c2e;            
-            aspect-ratio: 3 / 4;            
-            position: relative;            
-            transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);        
+
+        a {
+            text-decoration: none;
+            color: inherit;
         }
-        
-        .cover-wrapper:hover {            
-            transform: scale(1.02);        
+
+        /* ===== TYPOGRAPHY ===== */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-serif);
+            font-weight: 600;
+            letter-spacing: -0.02em;
         }
-        
-        .cover-wrapper img {            
-            width: 100%;            
-            height: 100%;            
-            object-fit: cover;            
-            display: block;        
+
+        h1 {
+            font-size: clamp(2.8rem, 6vw, 5rem);
+            line-height: 1.05;
         }
-        
-        /* Meta */        
-        .meta {            
-            display: flex;            
-            align-items: center;            
+
+        h2 {
+            font-size: clamp(2rem, 3.5vw, 2.8rem);
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: clamp(1.3rem, 2vw, 1.7rem);
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-weight: 300;
+            font-size: 1.05rem;
+            max-width: 65ch;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-gold {
+            color: var(--gold);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-glass);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background: rgba(10, 10, 10, 0.92);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-cta {
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: var(--gold);
+            color: #0a0a0a;
+            transition: var(--transition);
+        }
+
+        .nav-cta:hover {
+            background: var(--gold-light);
+            transform: scale(1.03);
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: var(--font-sans);
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: #0a0a0a;
+        }
+
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(212, 175, 55, 0.25);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-primary);
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(8px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--text-secondary);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-gold {
+            background: transparent;
+            color: var(--gold);
+            border: 1.5px solid var(--gold);
+        }
+
+        .btn-outline-gold:hover {
+            background: var(--gold);
+            color: #0a0a0a;
+            transform: translateY(-2px);
+        }
+
+        .btn-group {
+            display: flex;
             flex-wrap: wrap;
-            gap: 1rem;        
-        }
-        
-        .meta .badge {            
-            background: var(--accent);            
-            color: #000;            
-            font-weight: 700;            
-            font-size: 0.75rem;            
-            text-transform: uppercase;            
-            letter-spacing: 0.05em;            
-            padding: 0.3rem 0.8rem;            
-            border-radius: 20px;        
-        }
-        
-        .meta .author {            
-            font-weight: 500;            
-            color: var(--text-secondary);            
-            font-size: 0.95rem;        
-        }
-        
-        .meta .author strong {            
-            color: var(--text-primary);            
-            font-weight: 600;        
-        }
-        
-        /* Headline */        
-        .headline h1 {            
-            font-size: clamp(2rem, 4vw, 2.8rem);            
-            font-weight: 700;            
-            line-height: 1.15;            
-            letter-spacing: -0.04em;            
-            color: var(--text-primary);        
-        }
-        
-        .headline h1 .highlight {            
-            color: var(--accent);        
-        }
-        
-        .headline .subhead {            
-            font-size: 1.1rem;            
-            color: var(--text-secondary);            
-            margin-top: 1rem;            
-            font-weight: 400;            
-            line-height: 1.4;        
-        }
-        
-        /* Description */        
-        .description {            
-            color: #a1a1a6;            
-            font-size: 1.05rem;            
-            line-height: 1.6;        
-        }
-        
-        .description p {            
-            margin-bottom: 1rem;        
-        }
-        
-        .description p:last-child {
-            margin-bottom: 0;
+            gap: 1rem;
+            margin-top: 2rem;
         }
 
-        .description strong {            
-            color: var(--text-primary);            
-            font-weight: 600;        
-        }
-        
-        /* ── NOT FOR list ── */        
-        .not-for {            
-            background: rgba(255, 255, 255, 0.03);            
-            border-radius: 24px;            
-            padding: 1.5rem;            
-            border: 1px solid var(--card-border);        
-        }
-        
-        .not-for .label {            
-            font-weight: 600;            
-            font-size: 0.85rem;            
-            text-transform: uppercase;            
-            letter-spacing: 0.05em;            
-            color: var(--accent);            
-            display: flex;            
-            align-items: flex-start;            
-            gap: 0.5rem;            
-            margin-bottom: 0.8rem;            
-            line-height: 1.3;
+        .btn-group.center {
+            justify-content: center;
         }
 
-        .not-for .label svg {
+        /* ===== HERO ===== */
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -20%;
+            width: 70%;
+            height: 120%;
+            background: radial-gradient(ellipse, var(--gold-glow) 0%, transparent 70%);
+            opacity: 0.3;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-content h1 .highlight {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-sub {
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: var(--text-secondary);
+            margin: 1rem 0 1.5rem;
+            font-style: italic;
+            max-width: 90%;
+        }
+
+        .hero-desc {
+            font-size: 1.1rem;
+            max-width: 90%;
+            color: var(--text-secondary);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .hero-stats .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-stats .stat-number {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .hero-stats .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Book Mockup */
+        .hero-image-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .book-mockup {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 12px;
+            box-shadow: -30px 30px 60px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            transform: perspective(1200px) rotateY(-12deg) rotateX(4deg);
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.6s ease;
+        }
+
+        .book-mockup:hover {
+            transform: perspective(1200px) rotateY(-4deg) rotateX(2deg);
+            box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(212, 175, 55, 0.2);
+        }
+
+        .glow-ring {
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+            animation: pulseGlow 4s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+
+        /* ===== GLASS CARD ===== */
+        .glass-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            transition: var(--transition);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ===== SECTION: ABOUT ===== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .about-grid .glass-card p {
+            max-width: 100%;
+        }
+
+        .about-grid .glass-card p strong {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        .author-image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .author-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+        }
+
+        .author-credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .credential-tag {
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        /* ===== THEMES / ICONS ===== */
+        .themes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .theme-card {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        .theme-card:hover {
+            border-color: rgba(212, 175, 55, 0.3);
+            transform: translateY(-4px);
+            background: rgba(212, 175, 55, 0.03);
+        }
+
+        .theme-icon {
+            font-size: 2.2rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .theme-card h4 {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        .theme-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+        }
+
+        /* ===== DOWNLOADS ===== */
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+
+        .download-card {
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .download-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--gold);
+            background: rgba(212, 175, 55, 0.04);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .download-card .icon {
+            font-size: 2.8rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .download-card h3 {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .download-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 0.3rem;
+        }
+
+        .download-card .badge-free {
+            display: inline-block;
+            margin-top: 0.75rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 0.2rem 1rem;
+            border-radius: 50px;
+        }
+
+        /* ===== AUTHORITY / TRUST ===== */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius);
+        }
+
+        .trust-item .icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-item h4 {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .trust-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.2rem;
+        }
+
+        /* ===== REVIEWS ===== */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-top: 2.5rem;
+        }
+
+        .review-card {
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius);
+        }
+
+        .review-card .stars {
+            color: var(--gold);
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+        }
+
+        .review-card blockquote {
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .review-card .reviewer {
+            font-weight: 500;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+        }
+
+        .review-card .reviewer-role {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== FAQ ===== */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-glass);
+            padding: 1.5rem 0;
+        }
+
+        .faq-item:first-of-type {
+            padding-top: 0;
+        }
+
+        .faq-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            font-size: 1.1rem;
+            cursor: pointer;
+            color: var(--text-primary);
+            transition: var(--transition);
+            gap: 1rem;
+        }
+
+        .faq-question:hover {
+            color: var(--gold);
+        }
+
+        .faq-question .toggle {
+            font-size: 1.5rem;
+            color: var(--gold);
+            transition: transform 0.3s ease;
             flex-shrink: 0;
-            margin-top: 2px;
         }
-        
-        .not-for .list {            
-            display: flex;            
-            flex-wrap: wrap;            
-            gap: 0.5rem;        
-        }
-        
-        .not-for .list span {            
-            background: rgba(255, 255, 255, 0.06);            
-            padding: 0.4rem 1rem;            
-            border-radius: 20px;            
-            font-size: 0.9rem;            
-            font-weight: 500;            
-            color: var(--text-primary);        
-        }
-        
-        .not-for .list span:last-child {            
-            background: var(--accent-soft);            
-            color: var(--accent);        
-        }
-        
-        .not-for-footer {            
-            margin-top: 1rem;            
-            font-size: 0.9rem;            
-            color: var(--text-secondary);            
-            line-height: 1.4;        
-        }
-        
-        /* ── Right Column — Form ── */        
-        .form-wrapper {            
-            background: #000000;            
-            border-radius: 24px;            
-            padding: 2rem;            
-            border: 1px solid var(--card-border);            
-            display: flex;            
-            flex-direction: column;        
-        }
-        
-        .form-wrapper .form-title {            
-            font-size: 1.4rem;            
-            font-weight: 600;            
-            color: var(--text-primary);            
-            margin-bottom: 0.4rem;            
-            letter-spacing: -0.02em;        
-        }
-        
-        .form-wrapper .form-sub {            
-            font-size: 0.95rem;            
-            color: var(--text-secondary);            
-            margin-bottom: 1.5rem;        
-        }
-        
-        .form-wrapper iframe {            
-            width: 100%;            
-            height: 650px;            
-            border: none;            
-            border-radius: 12px;            
-            background: transparent;        
-        }
-        
-        .privacy-note {            
-            margin-top: 1.5rem;            
-            font-size: 0.8rem;            
-            color: var(--text-secondary);            
-            text-align: center;            
-            display: flex;            
-            align-items: center;            
-            justify-content: center;            
-            gap: 0.4rem;        
-        }
-        
-        /* ── Responsive Media Queries ── */        
-        @media (max-width: 960px) {            
-            .grid {                
-                grid-template-columns: 1fr;                
-                gap: 3rem;            
-            }
-            
-            .landing {                
-                padding: 2.5rem;                
-                border-radius: 28px;            
-            }
-            
-            .book-info {                
-                order: 1;            
-            }
-            
-            .form-wrapper {                
-                order: 2;                
-                padding: 1.5rem;            
-            }
-            
-            .cover-wrapper {                
-                max-width: 320px;                
-                margin: 0 auto;            
-            }        
-        }
-        
-        @media (max-width: 576px) {            
-            body {                
-                padding: 0;                
-                padding-bottom: env(safe-area-inset-bottom);
-            }
-            
-            .landing {                
-                padding: 2rem 1rem;                
-                border-radius: 0;
-                border: none;
-                box-shadow: none;            
-            }
-            
-            .grid {
-                gap: 2.5rem;
-            }
 
-            .form-wrapper {
-                padding: 1.25rem 1rem;
-            }
+        .faq-item.active .faq-question .toggle {
+            transform: rotate(45deg);
+        }
 
-            .form-wrapper iframe {                
-                height: 680px; /* Slight height increase prevents scroll overlap inside iframe on tight viewports */            
-            }
-            
-            .not-for {
-                padding: 1.25rem 1rem;
-            }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
 
-            .not-for .list {                
-                flex-direction: column;                
-                align-items: stretch;            
-            }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            opacity: 1;
+        }
 
-            .not-for .list span {
+        .faq-answer p {
+            margin-top: 0.75rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            max-width: 100%;
+        }
+
+        /* ===== FINAL CTA ===== */
+        #final-cta {
+            text-align: center;
+            padding: 4rem 0;
+            border-top: 1px solid var(--border-glass);
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        #final-cta h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        #final-cta p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-glass);
+        }
+
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        footer .footer-links a {
+            color: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        footer .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        /* ===== REVEAL ANIMATIONS ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
+        .reveal-delay-3 {
+            transition-delay: 0.3s;
+        }
+        .reveal-delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
                 text-align: center;
-            }        
-        }    
-    </style></head><body>
-    <div class="landing">        
-        <div class="grid">
-            <div class="book-info">                                
-                <div class="cover-wrapper">                    
-                    <img src="tlg.png" alt="Moving Beyond the Checkpoint Mindset — book cover" />                
+                gap: 2rem;
+            }
+
+            .hero-content .hero-sub,
+            .hero-content .hero-desc {
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .btn-group {
+                justify-content: center;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .book-mockup {
+                max-width: 320px;
+                transform: none;
+                margin: 0 auto;
+            }
+
+            .book-mockup:hover {
+                transform: none;
+            }
+
+            .hero-image-wrapper .glow-ring {
+                display: none;
+            }
+
+            section {
+                padding: 3.5rem 0;
+            }
+
+            .glass-card {
+                padding: 1.8rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero-sub {
+                font-size: 1.1rem;
+            }
+
+            .hero-stats {
+                gap: 1.5rem;
+                flex-wrap: wrap;
+            }
+
+            .hero-stats .stat-number {
+                font-size: 1.4rem;
+            }
+
+            .btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-group .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .themes-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .author-image {
+                width: 110px;
+                height: 110px;
+            }
+
+            .nav-cta {
+                padding: 0.4rem 1.2rem;
+                font-size: 0.75rem;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .themes-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+
+            .theme-card {
+                padding: 1.2rem 0.5rem;
+            }
+
+            .theme-icon {
+                font-size: 1.6rem;
+            }
+
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">The Long<span>Game</span></a>
+            <a href="#downloads" class="nav-cta">Get the Book</a>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="hero-badge">✦ Free Download</span>
+                    <h1>
+                        The <span class="highlight">Long</span> Game
+                    </h1>
+                    <p class="hero-sub">“Build a life too important to waste.”</p>
+                    <p class="hero-desc">
+                        Break free from the cycle of short-term thinking. Discover the
+                        principles of lasting discipline, true purpose, and meaningful
+                        success — guided by faith and intentionality.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#downloads" class="btn btn-primary">⬇ &nbsp;Download Free</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Free Download</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">PDF + EPUB</span>
+                            <span class="stat-label">Both Formats</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">✨</span>
+                            <span class="stat-label">Purpose-Driven</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="meta">                    
-                    <span class="badge">New Release</span>                    
-                    <span class="author">by <strong>Saalim Zayed</strong></span>                
+
+                <div class="hero-image-wrapper reveal reveal-delay-2">
+                    <div class="glow-ring"></div>
+                    <img
+                    src="tlg.png"
+                    alt="The Long Game Book Cover by Saalim Zayed"
+                    class="book-mockup"
+                    loading="eager"
+                    />
                 </div>
-                
-                <div class="headline">                    
-                    <h1>                        Moving Beyond<br />                        <span class="highlight">the Checkpoint</span> Mindset                    </h1>                    
-                    <div class="subhead">                        <strong>The Long Game</strong> — Why So Many Young People Have No Long-Term Vision for Their Lives                    </div>                
-                </div>
-                
-                <div class="description">                    
-                    <p>                        This isn't another "follow your passion" book. It's a wake-up call.                        <strong>Saalim Zayed</strong> dismantles the short-term, box-checking                        mentality that keeps so many talented young people stuck — and shows                        you how to build a <strong>decade‑spanning vision</strong> that actually                        means something.                    </p>                    
-                    <p>                        If you've ever felt like you're just jumping through hoops, grinding                        for grades, or chasing titles that don't fit who you really are —                        this book will change how you see your future.                    </p>                
-                </div>
-                
-                <div class="not-for">                    
-                    <div class="label">                        
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                        
-                        This book is NOT for you if you want to be…                    
-                    </div>                    
-                    <div class="list">                        
-                        <span>👨‍⚕️ Doctor</span>                        
-                        <span>🧑‍🔬 Engineer</span>                        
-                        <span>🧑‍🏫 Teacher</span>                        
-                        <span>✈️ Pilot</span>                        
-                        <span>🧾 Or just "follow the script"</span>                    
-                    </div>                    
-                    <div class="not-for-footer">                        
-                        This is for the <strong style="color: var(--text-primary);">misfits</strong>, the builders,                         and the ones who refuse to trade their potential for a paycheck.                    </div>                
-                </div>            
             </div>
-            
-            <div class="form-wrapper">                
-                <div class="form-title">                    
-                    Get the eBook                
-                </div>                
-                <div class="form-sub">                    
-                    Enter your details below and we'll send you the book to uour 📩MAIL <strong style="color: var(--text-primary);">for free</strong>.                
+        </section>
+
+        <!-- ===== ABOUT BOOK & AUTHOR ===== -->
+        <section id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- About Book -->
+                    <div class="glass-card reveal">
+                        <h2>About the Book</h2>
+                        <p>
+                            <strong>The Long Game</strong> is a thought-provoking exploration
+                            into the essence of purpose, long-term thinking, discipline, and
+                            meaningful success. It serves as a guide for building a life
+                            anchored by enduring values rather than fleeting distractions.
+                        </p>
+                        <p>
+                            The book offers a thoughtful critique of modern education systems,
+                            which often unintentionally incentivize students to focus on
+                            short-term achievements — chasing grades, passing exams, and
+                            collecting certificates — while overlooking the development of
+                            long-term vision, independent thinking, and a clear sense of purpose.
+                        </p>
+                        <p>
+                            Through inspiring and intellectually engaging insights, readers
+                            learn how to break free from this short-term mindset and
+                            intentionally construct a deeply meaningful life that creates
+                            lasting impact.
+                        </p>
+
+                        <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                            <span class="credential-tag">📖 Purpose</span>
+                            <span class="credential-tag">🧠 Long-Term Thinking</span>
+                            <span class="credential-tag">⚡ Discipline</span>
+                            <span class="credential-tag">🕌 Faith &amp; Focus</span>
+                        </div>
+                    </div>
+
+                    <!-- About Author -->
+                    <div class="glass-card reveal reveal-delay-1">
+                        <div class="author-image-wrapper">
+                            <img
+                            src="szprt.png"
+                            alt="Saalim Zayed – Author of The Long Game"
+                            class="author-image"
+                            loading="lazy"
+                            />
+                        </div>
+                        <h2 style="text-align: center;">About the Author</h2>
+                        <p style="text-align: center; max-width: 100%;">
+                            <strong>Saalim Zayed</strong> is a founder, author, and entrepreneur.
+                            He is the <strong>CEO of Catofy</strong>, a U.S.-based modern pet
+                            accessories brand valued at <strong>$1M</strong>, and the founder of
+                            <strong>Hukm Qalbi</strong>.
+                        </p>
+                        <p style="text-align: center; max-width: 100%;">
+                            His work focuses on discipline, long-term thinking, identity, and
+                            purpose-driven success. Through his writing and ventures, Saalim
+                            empowers young people to shift their mindset toward intentional
+                            living and lasting impact.
+                        </p>
+
+                        <div class="author-credentials" style="justify-content: center;">
+                            <span class="credential-tag">🏢 Catofy CEO</span>
+                            <span class="credential-tag">📈 $1M Brand</span>
+                            <span class="credential-tag">✍️ Author</span>
+                            <span class="credential-tag">🕌 Hukm Qalbi</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <iframe                    
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSeSmd-80KNniOpvvs99VY0OzTUUE39uvAGcrZ5Qhnbb0a8eKA/viewform?embedded=true"                    
-                    loading="lazy"                    
-                    title="Get the eBook — Moving Beyond the Checkpoint Mindset"                
-                >                    
-                    Loading…                
-                </iframe>
-                
-                <div class="privacy-note">                    
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>                    
-                    Your information is safe. No spam, ever.                
-                </div>            
-            </div>        
-        </div>    
+            </div>
+        </section>
+
+        <!-- ===== KEY THEMES ===== -->
+        <section id="themes">
+            <div class="container">
+                <div class="text-center reveal">
+                    <h2>What You'll Discover</h2>
+                    <p style="margin: 0 auto;">Core themes that will reshape how you think about success, time, and purpose.</p>
+                </div>
+
+                <div class="themes-grid">
+                    <div class="theme-card reveal reveal-delay-1">
+                        <span class="theme-icon">⚡</span>
+                        <h4>Discipline over Motivation</h4>
+                        <p>Build systems that outlast fleeting feelings.</p>
+                    </div>
+                    <div class="theme-card reveal reveal-delay-1">
+                        <span class="theme-icon">🔭</span>
+                        <h4>Long-Term Thinking</h4>
+                        <p>See beyond the next checkpoint or semester.</p>
+                    </div>
+                    <div class="theme-card reveal reveal-delay-2">
+                        <span class="theme-icon">🎯</span>
+                        <h4>Purpose &amp; Identity</h4>
+                        <p>Know who you are becoming, not just what you're doing.</p>
+                    </div>
+                    <div class="theme-card reveal reveal-delay-2">
+                        <span class="theme-icon">🕌</span>
+                        <h4>Faith &amp; Focus</h4>
+                        <p>Anchor your ambition in something eternal.</p>
+                    </div>
+                    <div class="theme-card reveal reveal-delay-3">
+                        <span class="theme-icon">🌱</span>
+                        <h4>Building a Meaningful Life</h4>
+                        <p>Create impact that outlasts your years.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== AUTHORITY / TRUST ===== -->
+        <section id="authority" style="padding-top: 0;">
+            <div class="container">
+                <div class="text-center reveal">
+                    <h2>Built on Real-World Authority</h2>
+                    <p style="margin: 0 auto;">Saalim Zayed's work is grounded in proven experience and a commitment to purpose.</p>
+                </div>
+
+                <div class="trust-grid">
+                    <div class="trust-item reveal reveal-delay-1">
+                        <span class="icon">🏢</span>
+                        <h4>Founder &amp; CEO of Catofy</h4>
+                        <p>U.S.-based modern pet accessories brand valued at $1M</p>
+                    </div>
+                    <div class="trust-item reveal reveal-delay-2">
+                        <span class="icon">🕌</span>
+                        <h4>Founder of Hukm Qalbi</h4>
+                        <p>Dedicated to purpose-driven living and mindset transformation</p>
+                    </div>
+                    <div class="trust-item reveal reveal-delay-3">
+                        <span class="icon">✍️</span>
+                        <h4>Author of The Long Game</h4>
+                        <p>A book about patience, purpose, discipline, and lasting success</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== DOWNLOADS ===== -->
+        <section id="downloads">
+            <div class="container">
+                <div class="text-center reveal">
+                    <h2>Start Reading Today</h2>
+                    <p style="margin: 0 auto;">Choose your preferred format. No sign-ups. No email required. Just immediate access.</p>
+                </div>
+
+                <div class="download-grid">
+                    <!-- EPUB -->
+                    <a
+                    href="https://drive.google.com/file/d/10Cpd1XM5hPeN--gIW2E2sKyEJHA_fta1/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="download-card reveal reveal-delay-1"
+                    >
+                    <span class="icon">📘</span>
+                    <h3>Download EPUB</h3>
+                    <p>Best for Kindle, Apple Books, and mobile readers</p>
+                    <span class="badge-free">✦ Free Download</span>
+                </a>
+
+                <!-- PDF -->
+                <a
+                href="https://drive.google.com/file/d/10Cpd1XM5hPeN--gIW2E2sKyEJHA_fta1/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="download-card reveal reveal-delay-2"
+                >
+                <span class="icon">📄</span>
+                <h3>Download PDF</h3>
+                <p>Best for desktop, printing, and offline reading</p>
+                <span class="badge-free">✦ Free Download</span>
+            </a>
+
+            <!-- Read Online -->
+            <a
+            href="https://drive.google.com/file/d/10Cpd1XM5hPeN--gIW2E2sKyEJHA_fta1/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="download-card reveal reveal-delay-3"
+            >
+            <span class="icon">🌐</span>
+            <h3>Read Online</h3>
+            <p>Preview the book directly in your browser</p>
+            <span class="badge-free">✦ Free Access</span>
+        </a>
     </div>
-</body></html>
+
+    <div class="text-center" style="margin-top: 1.5rem;">
+        <p style="font-size: 0.9rem; color: var(--text-muted);">
+            ⚡ No registration required. Share freely with anyone who needs direction.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section id="reviews">
+    <div class="container">
+        <div class="text-center reveal">
+            <h2>What Readers Are Saying</h2>
+            <p style="margin: 0 auto;">Real feedback from people who have read <em>The Long Game</em>.</p>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card reveal reveal-delay-1">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                    “A brilliant critique of how we've been conditioned to think small.
+                    This book changed the way I look at my 10-year goals.”
+                </blockquote>
+                <div class="reviewer">— Omar H.</div>
+                <div class="reviewer-role">Entrepreneur</div>
+            </div>
+
+            <div class="review-card reveal reveal-delay-2">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                    “Saalim Zayed delivers a necessary wake-up call for anyone feeling
+                    stuck in the rat race of modern education and corporate ladders.”
+                </blockquote>
+                <div class="reviewer">— Aisha M.</div>
+                <div class="reviewer-role">Software Engineer</div>
+            </div>
+
+            <div class="review-card reveal reveal-delay-3">
+                <div class="stars">★★★★★</div>
+                <blockquote>
+                    “Clear, inspiring, and actionable. It's rare to find a personal
+                    development book that tackles systemic issues while giving you
+                    personal agency.”
+                </blockquote>
+                <div class="reviewer">— Zayd R.</div>
+                <div class="reviewer-role">University Student</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" style="padding-top: 0;">
+    <div class="container">
+        <div class="text-center reveal">
+            <h2>Frequently Asked Questions</h2>
+            <p style="margin: 0 auto;">Quick answers to the most common questions about the book.</p>
+        </div>
+
+        <div class="faq-list glass-card" style="max-width: 800px; margin: 2rem auto 0;">
+
+            <div class="faq-item active">
+                <div class="faq-question">
+                    Is this book really free?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. <em>The Long Game</em> is available entirely for free. The goal is to spread the message and help as many people as possible develop a long-term mindset.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can I share it with others?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. You are highly encouraged to share the book with friends, family, students, or anyone you believe would benefit from reading it.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What formats are available?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The book is available as PDF (ideal for computers and printing) and EPUB (ideal for mobile devices, tablets, and e-readers). You can also read it online.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Who should read this book?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>This book is for anyone seeking meaningful success. It is especially impactful for students, young professionals, and entrepreneurs who want to break free from short-term societal pressures and build a purpose-driven life.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" style="border-bottom: none;">
+                <div class="faq-question">
+                    How do I connect with the author?
+                    <span class="toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can connect with Saalim Zayed through his official social media channels or via the contact information provided at the end of the book.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section id="final-cta">
+    <div class="container reveal">
+        <h2>Start Thinking Long-Term</h2>
+        <p>Download the book and begin your journey today. No cost. No barriers. Just a clear path forward.</p>
+
+        <div class="btn-group center">
+            <a href="#downloads" class="btn btn-primary">⬇ &nbsp;Download EPUB</a>
+            <a href="#downloads" class="btn btn-outline-gold">📄 &nbsp;Download PDF</a>
+        </div>
+
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 2rem;">
+            “The greatest distraction is living without a purpose.” <br />
+            <span style="color: var(--text-secondary);">— Saalim Zayed, <em>The Long Game</em></span>
+        </p>
+    </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="container">
+        <p style="max-width: 100%;">
+            &copy; 2026 Saalim Zayed. All rights reserved.
+        </p>
+        <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#downloads">Download</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; max-width: 100%;">
+            Category: Personal Development · Purpose · Self-Improvement · Islamic Mindset
+        </p>
+    </div>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+    // ---- Header scroll effect ----
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // ---- Reveal animations (Intersection Observer) ----
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -30px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ---- FAQ accordion ----
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all others
+            faqItems.forEach(other => {
+                other.classList.remove('active');
+            });
+
+            // Toggle current
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+
+    // ---- Smooth anchor scroll (for nav links) ----
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const targetEl = document.querySelector(targetId);
+            if (targetEl) {
+                e.preventDefault();
+                const offsetTop = targetEl.getBoundingClientRect().top + window.pageYOffset - 80;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
